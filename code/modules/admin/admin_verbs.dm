@@ -93,7 +93,11 @@ var/list/admin_verbs_admin = list(
 	/client/proc/view_chemical_reaction_logs,
 	/client/proc/makePAI,
 	/client/proc/FRules,
-	/client/proc/forceshuttles
+	/client/proc/forceshuttles,
+	/client/proc/cleartox,
+	/client/proc/freeze,
+	/client/proc/freezemecha,
+	/client/proc/clean
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,

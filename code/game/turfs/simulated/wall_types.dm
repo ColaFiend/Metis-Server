@@ -1,4 +1,5 @@
 /turf/simulated/wall/r_wall
+	max_temperature = 6000
 	icon_state = "rgeneric"
 /turf/simulated/wall/r_wall/New(var/newloc)
 	..(newloc, "plasteel","plasteel") //3strong

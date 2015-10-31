@@ -1927,6 +1927,50 @@ area/space/atmosalert()
 	name = "\improper Strange Station"
 	icon_state = "away"
 
+/area/awaymission/abandonedship
+	name = "\improper Abandoned Ship"
+	icon_state = "away"
+
+/area/awaymission/abandonedship/research
+	name = "\improper Research Sector"
+	icon_state = "away2"
+
+/area/awaymission/abandonedship/medical
+	name = "\improper Medical Sector"
+	icon_state = "away1"
+
+/area/awaymission/abandonedship/security
+	name = "\improper Security Checkpoint"
+	icon_state = "away3"
+
+/area/awaymission/abandonedship/hanger
+	name = "\improper Hanger"
+	icon_state = "away3"
+
+/area/awaymission/abandonedship/containment
+	name = "\improper Ship Containment"
+	icon_state = "away2"
+
+/area/awaymission/abandonedship/command
+	name = "\improper Ship Command"
+	icon_state = "away"
+
+/area/awaymission/abandonedship/commonareas
+	name = "\improper Ship Common Areas"
+	icon_state = "away"
+
+/area/awaymission/abandonedship/engineering
+	name = "\improper Engineering Sector"
+	icon_state = "away"
+
+/area/awaymission/abandonedship/maitance
+	name = "\improper Ship Maitance"
+	icon_state = "away"
+
+/area/awaymission/abandonedship/hall
+	name = "\improper Ship Walkways"
+	icon_state = "away1"
+
 /area/awaymission/wwmines
 	name = "\improper Wild West Mines"
 	icon_state = "away1"
