@@ -21,6 +21,9 @@ var/list/global/wall_cache = list()
 	var/last_state
 	var/construction_stage
 
+	var/max_temperature = 1800 //K, walls will take damage if they're next to a fire hotter than this
+
+
 /turf/simulated/wall/New(var/newloc, var/materialtype, var/rmaterialtype)
 	..(newloc)
 	icon_state = "blank"
@@ -104,6 +107,12 @@ var/list/global/wall_cache = list()
 		user << "<span class='warning'>There is fungus growing on [src].</span>"
 
 //Damage
+
+/turf/simulated/wall/adjacent_fire_act(turf/simulated/floor/adj_turf, datum/gas_mixture/adj_air, adj_temp, adj_volume)
+	if(adj_temp > max_temperature)
+		take_damage(log(RAND_F(0.9, 1.1) * (adj_temp - max_temperature)))
+
+	return ..()
 
 /turf/simulated/wall/melt()
 
