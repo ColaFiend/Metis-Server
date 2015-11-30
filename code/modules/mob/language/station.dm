@@ -40,6 +40,14 @@
 	flags = RESTRICTED
 	syllables = list("zz", "zzz", "mm", "ti")
 
+/datum/language/kidan/get_random_name()
+	var/new_name = "[pick(list("Zzzard","Ttiaz","Ztan","Mmtiz","Kittlin","Zzzaati","Mmmkaz"))]"
+	new_name += " [pick(list("Zzzzzzzmti","Krrrchak","Chcichcu"))]"
+	return new_name
+
+
+
+
 /datum/language/machine
 	name = "Encoded Audio Language"
 	desc = "A fast paced array of beeps and buzzes, mostly used by machines."
@@ -50,6 +58,10 @@
 	key = "-"
 	flags = RESTRICTED
 	syllables = list("beep", "boop", "buzz","beepleep","*","!")
+
+/datum/language/machine/get_random_name()
+	var/new_name = "[pick(list("Watson","Deep Blue","Turing","Eliza","Parry","Loebner","Huma","Ebert","Xerxes","Rosie"))]"
+	return new_name
 
 
 /datum/language/unathi
